@@ -71,10 +71,12 @@ import random
 # print(f"miinimum arv on: {miinimum_arv}")
 # print(f"maksimum arv on: {maksimum_arv}")
 
+
 import datetime
 
-birthday = input("insert birthday: (dd.mm.yyyy)")
-birthday_converted =  datetime.datetime.strptime(birthday, "%d.%m.%Y")
-today = datetime.datetime.now
-delta = birthday_converted - today
-print(delta.days)
+birthday = input("insert birthday (dd.mm.yyyy): ")
+birth_date = datetime.datetime.strptime(birthday, "%d.%m.%Y").date()
+
+today = datetime.date.today()
+delta = today - birth_date
+print(f"Oled elanud {delta.days} päeva alates sünnist") 
