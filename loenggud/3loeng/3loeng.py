@@ -109,10 +109,10 @@ print(f"mis on {exercise1number1} * {exercise1number2}?")
 answer1 = int(input("Teie vastus:"))
 if exercise1 == answer1:
     print("teie vastus on oige")
+    score += 1 
 else:
-    print("teie vastus on vale")
-if exercise1 == answer1:
-    score += 1
+    print(f"teie vastus on vale, õige vastus on {exercise1}")
+
 
 exercise2number1 = random.randint(1,10)
 exercise2number2 = random.randint(1,10)
@@ -121,10 +121,9 @@ print(f"mis on {exercise2number1} + {exercise2number2}?")
 answer2 = int(input("Teie vastus:"))
 if exercise2 == answer2:
     print("teie vastus on oige")
+    score += 1 
 else:
-    print("teie vastus on vale") 
-if exercise2 == answer2:
-    score += 1
+    print(f"teie vastus on vale, õige vastus on {exercise2}") 
 
 
 exercise3number1 = random.randint(1,10)
@@ -134,10 +133,10 @@ print(f"mis on {exercise3number1} - {exercise3number2}?")
 answer3 = int(input("Teie vastus:"))
 if exercise3 == answer3:
     print("teie vastus on oige")
+    score += 1 
 else:
-    print("teie vastus on vale") 
-if exercise3 == answer3:
-    score += 1
+    print(f"teie vastus on vale, õige vastus on {exercise3}") 
+
 
 
 exercise4number1 = random.randint(1,10)
@@ -147,10 +146,9 @@ print(f"mis on {exercise4number1} : {exercise4number2} täisarvuline jagamine?")
 answer4 = int(input("Teie vastus:"))
 if exercise4 == answer4:
     print("teie vastus on oige")
+    score += 1 
 else:
-    print("teie vastus on vale") 
-if exercise4 == answer4:
-    score += 1
+    print(f"teie vastus on vale, õige vastus on {exercise4}") 
 
 exercise5number1 = random.randint(1,10)
 exercise5number2 = random.randint(1,10)
@@ -159,9 +157,9 @@ print(f"mis on {exercise5number1} : {exercise5number2} jagamise jääk?")
 answer5 = int(input("Teie vastus:"))
 if exercise5 == answer5:
     print("teie vastus on oige")
-else:
-    print("teie vastus on vale") 
-if exercise5 == answer5:
     score += 1 
+else:
+    print(f"teie vastus on vale, õige vastus on {exercise5}") 
+
 
 print(f"Teie tulemus: {score} õiget vastust 5-st.")
