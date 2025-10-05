@@ -75,16 +75,105 @@
 # 4. Pilet
 # Ühistranspordis saadud pilet (kasutaja sisestab) loetakse õnnelikuks, kui  kuuekohalise numbri korral langeb esimese kolme numbri summa kokku kolme viimase numbri summaga.
 
-piletinr = int(input("sisesta 6-kohaline piletikood:"))
+# piletinr = int(input("sisesta 6-kohaline piletikood:"))
 
-piletNr1 = (piletinr // 100000) % 10
-piletNr2 = (piletinr // 10000) % 10
-piletNr3 = (piletinr // 1000) %10
-piletNr4 = (piletinr // 100) % 10
-piletNr5 = (piletinr // 10) % 10
-piletNr6 = piletinr % 10
+# piletNr1 = (piletinr // 100000) % 10
+# piletNr2 = (piletinr // 10000) % 10
+# piletNr3 = (piletinr // 1000) %10
+# piletNr4 = (piletinr // 100) % 10
+# piletNr5 = (piletinr // 10) % 10
+# piletNr6 = piletinr % 10
 
-if piletNr1 + piletNr2 + piletNr3 == piletNr4 + piletNr5 + piletNr6:
-    print("teie pilet on õnnelik")
+# if piletNr1 + piletNr2 + piletNr3 == piletNr4 + piletNr5 + piletNr6:
+#     print("teie pilet on õnnelik")
+# else:
+#     print("pilet pole õnnelik")
+
+#     5. Matemaatiliste operatsioonide test
+# Kirjuta programm, mis genereerib viis juhuslikku matemaatikaülesannet, kus kasutaja peab:
+
+# Korrutama kaks juhuslikku arvu.
+# Liitma kaks juhuslikku arvu.
+# Lahutama ühe juhusliku arvu teisest.
+# Jagama täisarvuliselt ühe juhusliku arvu teisega.
+# Leiutama ühe arvu jagamisel teisega jäägi (modulo operatsioon).
+# Matemaatikaülesanded:
+import random
+
+
+exercise1number1 = random.randint(1,10)
+exercise1number2 = random.randint(1,10)
+exercise1 = exercise1number1 * exercise1number2
+print(f"mis on {exercise1number1} * {exercise1number2}?")
+answer1 = int(input("Teie vastus:"))
+if exercise1 == answer1:
+    print("teie vastus on oige")
 else:
-    print("pilet pole õnnelik")
+    print("teie vastus on vale")
+
+
+exercise2number1 = random.randint(1,10)
+exercise2number2 = random.randint(1,10)
+exercise2 = exercise2number1 + exercise2number2
+print(f"mis on {exercise2number1} + {exercise2number2}?")
+answer2 = int(input("Teie vastus:"))
+if exercise2 == answer2:
+    print("teie vastus on oige")
+else:
+    print("teie vastus on vale") 
+
+
+exercise3number1 = random.randint(1,10)
+exercise3number2 = random.randint(1,10)
+exercise3 = exercise3number1 - exercise3number2
+print(f"mis on {exercise3number1} - {exercise3number2}?")
+answer3 = int(input("Teie vastus:"))
+if exercise3 == answer3:
+    print("teie vastus on oige")
+else:
+    print("teie vastus on vale") 
+
+
+exercise4number1 = random.randint(1,10)
+exercise4number2 = random.randint(1,10)
+exercise4 = exercise4number1 // exercise4number2
+print(f"mis on {exercise4number1} : {exercise4number2} täisarvuline jagamine?")
+answer4 = int(input("Teie vastus:"))
+if exercise4 == answer4:
+    print("teie vastus on oige")
+else:
+    print("teie vastus on vale") 
+
+
+exercise5number1 = random.randint(1,10)
+exercise5number2 = random.randint(1,10)
+exercise5 = exercise5number1 % exercise5number2
+print(f"mis on {exercise5number1} : {exercise5number2} jagamise jääk?")
+answer5 = int(input("Teie vastus:"))
+if exercise5 == answer5:
+    print("teie vastus on oige")
+else:
+    print("teie vastus on vale") 
+
+if 
+# 1. Mis on 8 * 6?
+# Teie vastus: 48
+# Õige!
+
+# 2. Mis on 23 + 19?
+# Teie vastus: 43
+# Vale! Õige vastus on: 42
+
+# 3. Mis on 85 - 43?
+# Teie vastus: 42
+# Õige!
+
+# 4. Mis on 36 // 6 (täisarvuline jagamine)?
+# Teie vastus: 6
+# Õige!
+
+# 5. Mis on 29 % 5 (jääk jagamisel)?
+# Teie vastus: 4
+# Õige!
+
+# Teie tulemus: 4 õiget vastust 5-st.
