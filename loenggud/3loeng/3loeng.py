@@ -100,6 +100,7 @@
 # Matemaatikaülesanded:
 import random
 
+score = 0
 
 exercise1number1 = random.randint(1,10)
 exercise1number2 = random.randint(1,10)
@@ -110,7 +111,8 @@ if exercise1 == answer1:
     print("teie vastus on oige")
 else:
     print("teie vastus on vale")
-
+if exercise1 == answer1:
+    score += 1
 
 exercise2number1 = random.randint(1,10)
 exercise2number2 = random.randint(1,10)
@@ -121,6 +123,8 @@ if exercise2 == answer2:
     print("teie vastus on oige")
 else:
     print("teie vastus on vale") 
+if exercise2 == answer2:
+    score += 1
 
 
 exercise3number1 = random.randint(1,10)
@@ -132,6 +136,8 @@ if exercise3 == answer3:
     print("teie vastus on oige")
 else:
     print("teie vastus on vale") 
+if exercise3 == answer3:
+    score += 1
 
 
 exercise4number1 = random.randint(1,10)
@@ -143,7 +149,8 @@ if exercise4 == answer4:
     print("teie vastus on oige")
 else:
     print("teie vastus on vale") 
-
+if exercise4 == answer4:
+    score += 1
 
 exercise5number1 = random.randint(1,10)
 exercise5number2 = random.randint(1,10)
@@ -154,26 +161,7 @@ if exercise5 == answer5:
     print("teie vastus on oige")
 else:
     print("teie vastus on vale") 
+if exercise5 == answer5:
+    score += 1 
 
-if 
-# 1. Mis on 8 * 6?
-# Teie vastus: 48
-# Õige!
-
-# 2. Mis on 23 + 19?
-# Teie vastus: 43
-# Vale! Õige vastus on: 42
-
-# 3. Mis on 85 - 43?
-# Teie vastus: 42
-# Õige!
-
-# 4. Mis on 36 // 6 (täisarvuline jagamine)?
-# Teie vastus: 6
-# Õige!
-
-# 5. Mis on 29 % 5 (jääk jagamisel)?
-# Teie vastus: 4
-# Õige!
-
-# Teie tulemus: 4 õiget vastust 5-st.
+print(f"Teie tulemus: {score} õiget vastust 5-st.")
