@@ -1,0 +1,46 @@
+[
+    {
+        "alarm_id": "A001",
+        "sensor_id": "TEMP_02",
+        "sensor_type": "temperature",
+        "value": 31.5,
+        "threshold_min": 16,
+        "threshold_max": 28,
+        "location": "kitchen",
+        "timestamp": "2026-03-02 14:23:00",
+        "message": "Temperatuur (31.5) ületab lubatud maksimumi 28."
+    },
+    {
+        "alarm_id": "A002",
+        "sensor_id": "TEMP_03",
+        "sensor_type": "temperature",
+        "value": 15.2,
+        "threshold_min": 16,
+        "threshold_max": 28,
+        "location": "bedroom",
+        "timestamp": "2026-03-03 08:15:00",
+        "message": "Temperatuur (15.2) on alla lubatud miinimumi 16."
+    },
+    {
+        "alarm_id": "A003",
+        "sensor_id": "HUM_03",
+        "sensor_type": "humidity",
+        "value": 76.2,
+        "threshold_min": 30,
+        "threshold_max": 70,
+        "location": "bedroom",
+        "timestamp": "2026-03-10 21:10:00",
+        "message": "Niiskus (76.2) ületab lubatud maksimumi 70."
+    },
+    {
+        "alarm_id": "A004",
+        "sensor_id": "LIGHT_04",
+        "sensor_type": "light",
+        "value": 950.0,
+        "threshold_min": 0,
+        "threshold_max": 900,
+        "location": "garage",
+        "timestamp": "2026-03-13 18:25:00",
+        "message": "Valgustase (950.0) ületab lubatud maksimumi 900."
+    }
+]

@@ -1,0 +1,68 @@
+sensors:
+  TEMP_01:
+    name: Elutoa temperatuuriandur
+    location: living room
+  TEMP_02:
+    name: Köögi temperatuuriandur
+    location: kitchen
+  TEMP_03:
+    name: Magamistoa temperatuuriandur
+    location: bedroom
+  TEMP_04:
+    name: Garaaži temperatuuriandur
+    location: garage
+  HUM_01:
+    name: Elutoa niiskusandur
+    location: living room
+  HUM_02:
+    name: Vannitoa niiskusandur
+    location: bathroom
+  HUM_03:
+    name: Magamistoa niiskusandur
+    location: bedroom
+  HUM_04:
+    name: Köögi niiskusandur
+    location: kitchen
+  LIGHT_01:
+    name: Elutoa valgusandur
+    location: living room
+  LIGHT_02:
+    name: Magamistoa valgusandur
+    location: bedroom
+  LIGHT_03:
+    name: Köögi valgusandur
+    location: kitchen
+  LIGHT_04:
+    name: Garaaži valgusandur
+    location: garage
+  MOT_01:
+    name: Elutoa liikumisandur
+    location: living room
+  MOT_02:
+    name: Magamistoa liikumisandur
+    location: bedroom
+  MOT_03:
+    name: Garaaži liikumisandur
+    location: garage
+  MOT_04:
+    name: Köögi liikumisandur
+    location: kitchen
+limits:
+  temperature:
+    min: 16
+    max: 28
+  humidity:
+    min: 30
+    max: 70
+  light:
+    min: 0
+    max: 900
+  motion:
+    min: 0
+    max: 1
+alarm_settings:
+  enabled: true
+  save_to_file: true
+system_settings:
+  reading_interval_seconds: 60
+  timezone: Europe/Tallinn
